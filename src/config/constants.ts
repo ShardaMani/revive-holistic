@@ -1,0 +1,206 @@
+export const businessInfo = {
+  name: 'Revive Holistic Wellness Centre',
+  description: 'Personalized holistic care solutions for improved mobility and wellness. Located in Najafgarh, South-West Delhi.',
+  phone: '+91 9818515259',
+  email: 'reviveholisticwellnesscentre@gmail.com',
+  whatsapp: 'https://wa.me/919818515259',
+  address: '292, A1, First Floor, Khasra no 52 Thana Road, Delhi, DL 110043',
+  location: 'Najafgarh, South-West Delhi, Delhi, India',
+  domain: 'https://reviveholistic.in',
+  hours: {
+    open: '09:30 AM',
+    close: '08:30 PM',
+    lunchStart: '12:30 PM',
+    lunchEnd: '04:30 PM',
+    holidays: 'Closed on Major Holidays',
+  },
+  social: {
+    phone: 'tel:+919818515259',
+    email: 'mailto:reviveholisticwellnesscentre@gmail.com',
+  },
+};
+
+export const services = [
+  {
+    id: 'physiotherapy',
+    name: 'Physiotherapy & Rehabilitation',
+    shortDescription: 'Personalized physiotherapy and rehabilitation programs designed to improve movement, mobility, strength, and functional recovery.',
+    fullDescription: 'Our physiotherapy services focus on personalized rehabilitation, therapeutic exercises, manual techniques, and mobility-focused care tailored to each patient\'s condition and recovery goals.',
+    price: '₹350',
+    duration: '1 hr',
+    slug: 'physiotherapy',
+  },
+  {
+    id: 'acupressure',
+    name: 'Acupressure Therapy',
+    shortDescription: 'Complementary acupressure-based care tailored according to individual needs.',
+    fullDescription: 'Acupressure therapy as part of our complementary wellness and therapeutic services, designed to improve circulation and support your healing journey.',
+    price: '₹500',
+    duration: '1 hr',
+    slug: 'acupressure-therapy',
+  },
+  {
+    id: 'cupping',
+    name: 'Cupping Therapy',
+    shortDescription: 'Cupping therapy as part of the centre\'s complementary wellness and therapeutic services.',
+    fullDescription: 'Our cupping therapy services support pain relief, improve circulation, and promote relaxation as part of a holistic approach to wellness.',
+    price: '₹200',
+    duration: '30 mins',
+    slug: 'cupping-therapy',
+  },
+  {
+    id: 'chiropractic',
+    name: 'Chiropractic Care',
+    shortDescription: 'Individualized chiropractic and movement-focused care where appropriate.',
+    fullDescription: 'We provide specialized chiropractic care focused on spinal health, mobility improvement, and functional movement enhancement.',
+    price: 'On consultation',
+    duration: 'Varies',
+    slug: 'chiropractic-care',
+  },
+  {
+    id: 'sports',
+    name: 'Sports Rehabilitation',
+    shortDescription: 'Rehabilitation and movement-based care for sports injuries, recovery, and return to activity.',
+    fullDescription: 'Specialized rehabilitation programs designed to help athletes recover from injuries and safely return to their sport.',
+    price: 'On consultation',
+    duration: 'Varies',
+    slug: 'sports-rehabilitation',
+  },
+  {
+    id: 'alternative',
+    name: 'Alternative Medicine',
+    shortDescription: 'Holistic and alternative medicine approaches based on individual requirements.',
+    fullDescription: 'Integrative alternative medicine approaches that complement our primary therapy services.',
+    price: 'On consultation',
+    duration: 'Varies',
+    slug: 'alternative-medicine',
+  },
+  {
+    id: 'manual-therapy',
+    name: 'Manual Therapy',
+    shortDescription: 'Hands-on therapeutic techniques focused on mobility, movement, and functional recovery.',
+    fullDescription: 'Manual therapy techniques tailored to help reduce discomfort, improve mobility, and support functional recovery.',
+    price: 'On consultation',
+    duration: 'Varies',
+    slug: 'manual-therapy',
+  },
+  {
+    id: 'orthopedic-rehabilitation',
+    name: 'Orthopedic Rehabilitation',
+    shortDescription: 'Individualized rehabilitation for musculoskeletal conditions, injuries, and recovery.',
+    fullDescription: 'Structured rehabilitation programs supporting recovery from musculoskeletal conditions, injuries, and procedures.',
+    price: 'On consultation',
+    duration: 'Varies',
+    slug: 'orthopedic-rehabilitation',
+  },
+  {
+    id: 'neuromuscular-reeducation',
+    name: 'Neuromuscular Re-education',
+    shortDescription: 'Movement-focused rehabilitation designed to improve coordination, control, and functional movement.',
+    fullDescription: 'Movement retraining focused on improving coordination, motor control, balance, and everyday function.',
+    price: 'On consultation',
+    duration: 'Varies',
+    slug: 'neuromuscular-reeducation',
+  },
+  {
+    id: 'dry-needling',
+    name: 'Dry Needling',
+    shortDescription: 'A therapeutic technique used to address muscle pain and improve movement quality.',
+    fullDescription: 'Dry needling may be used as part of an individualized treatment plan to address muscular discomfort and movement restrictions.',
+    price: 'On consultation',
+    duration: 'Varies',
+    slug: 'dry-needling',
+  },
+];
+
+export const specializations = [
+  {
+    id: 'manual-therapy',
+    name: 'Manual Therapy',
+    description: 'Hands-on therapeutic techniques focused on mobility, movement, and functional recovery.',
+    slug: 'manual-therapy',
+  },
+  {
+    id: 'orthopedic',
+    name: 'Orthopedic Rehabilitation',
+    description: 'Individualized rehabilitation for musculoskeletal conditions, injuries, and recovery.',
+    slug: 'orthopedic-rehabilitation',
+  },
+  {
+    id: 'neuromuscular',
+    name: 'Neuromuscular Re-education',
+    description: 'Movement-focused rehabilitation designed to improve coordination, control, and functional movement.',
+    slug: 'neuromuscular-reeducation',
+  },
+  {
+    id: 'dry-needling',
+    name: 'Dry Needling',
+    description: 'Therapeutic dry needling technique to address muscle pain and improve movement quality.',
+    slug: 'dry-needling',
+  },
+];
+
+export const team = [
+  {
+    id: 'abhimanyu',
+    name: 'Abhimanyu Vats',
+    title: 'Director & Alternative Medicine Practitioner',
+    qualifications: 'MD (AM), MD (CH.T)',
+    description: 'Abhimanyu Vats leads Revive Holistic Wellness Centre with a focus on holistic and integrative approaches to health and wellness. His vision is to provide patients with personalized care in a professional, supportive, and patient-centred environment.',
+    image: '/images/team/abhimanyu.jpg',
+  },
+  {
+    id: 'kapil',
+    name: 'Dr. Kapil Davirkar, P.T.',
+    title: 'Physiotherapist | Chiropractor | Alternative Medicine Therapist',
+    qualifications: 'BPT & MPT',
+    description: 'Dr. Kapil Davirkar is part of the consultant team at Revive Holistic Wellness Centre. His areas of professional practice include physiotherapy, chiropractic care, and alternative medicine-based therapeutic approaches.',
+    image: '/images/team/kapil.jpg',
+  },
+  {
+    id: 'tanya',
+    name: 'Dr. Tanya Mehra, P.T.',
+    title: 'Physiotherapist | Sports Rehabilitation | Acupuncture',
+    qualifications: 'BPT (IPH) | MPT (Sports) | DCPTOT | MD (ACU)',
+    description: 'Dr. Tanya Mehra is a consultant physiotherapist specializing in physiotherapy, sports rehabilitation, therapeutic occupational approaches, and acupuncture.',
+    image: '/images/team/tanya.jpg',
+  },
+];
+
+export const conditions = [
+  'Neck and cervical discomfort',
+  'Back and mid-back pain',
+  'Sciatica and radiating pain',
+  'Shoulder and rotator-cuff-related problems',
+  'Knee pain and mobility difficulties',
+  'Tennis elbow and other overuse injuries',
+  'Sports injuries',
+  'Muscle stiffness and movement restrictions',
+  'Postural problems',
+  'Joint and soft-tissue problems',
+  'Rehabilitation after injury or surgery',
+  'Certain nerve-related symptoms such as numbness or tingling',
+];
+
+export const whyChooseUs = [
+  {
+    id: 'personalized',
+    title: 'Personalized Care',
+    description: 'We aim to understand each patient\'s individual concerns, lifestyle, movement limitations, and wellness goals.',
+  },
+  {
+    id: 'multidisciplinary',
+    title: 'Multidisciplinary Team',
+    description: 'Our team combines expertise across physiotherapy, chiropractic care, sports rehabilitation, acupressure, and alternative medicine.',
+  },
+  {
+    id: 'holistic',
+    title: 'Holistic Perspective',
+    description: 'We consider the person as a whole and aim to address relevant physical, functional, and lifestyle factors.',
+  },
+  {
+    id: 'patient-centered',
+    title: 'Patient-Centred Environment',
+    description: 'We strive to provide a comfortable, professional, and supportive environment for active rehabilitation.',
+  },
+];
