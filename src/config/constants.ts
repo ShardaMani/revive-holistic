@@ -49,6 +49,15 @@ export const services = [
     slug: 'cupping-therapy',
   },
   {
+  id: 'yoga',
+  name: 'Yoga & Wellness',
+  shortDescription: 'Guided yoga sessions focused on flexibility, mobility, relaxation, and overall wellness.',
+  fullDescription: 'Personalized yoga and wellness sessions designed to support flexibility, mobility, relaxation, posture, and mindful movement.',
+  price: '₹XXX',
+  duration: '1 hr',
+  slug: 'yoga',
+  },
+  {
     id: 'chiropractic',
     name: 'Chiropractic Care',
     shortDescription: 'Individualized chiropractic and movement-focused care where appropriate.',
@@ -147,7 +156,7 @@ export const team = [
     title: 'Director & Alternative Medicine Practitioner',
     qualifications: 'MD (AM), MD (CH.T)',
     description: 'Abhimanyu Vats leads Revive Holistic Wellness Centre with a focus on holistic and integrative approaches to health and wellness. His vision is to provide patients with personalized care in a professional, supportive, and patient-centred environment.',
-    image: '/images/team/abhimanyu.jpg',
+    image: '/images/team/abhimanyu.jpeg',
   },
   {
     id: 'kapil',
@@ -155,7 +164,7 @@ export const team = [
     title: 'Physiotherapist | Chiropractor | Alternative Medicine Therapist',
     qualifications: 'BPT & MPT',
     description: 'Dr. Kapil Davirkar is part of the consultant team at Revive Holistic Wellness Centre. His areas of professional practice include physiotherapy, chiropractic care, and alternative medicine-based therapeutic approaches.',
-    image: '/images/team/kapil.jpg',
+    image: '/images/team/kapil.jpeg',
   },
   {
     id: 'tanya',
@@ -163,7 +172,7 @@ export const team = [
     title: 'Physiotherapist | Sports Rehabilitation | Acupuncture',
     qualifications: 'BPT (IPH) | MPT (Sports) | DCPTOT | MD (ACU)',
     description: 'Dr. Tanya Mehra is a consultant physiotherapist specializing in physiotherapy, sports rehabilitation, therapeutic occupational approaches, and acupuncture.',
-    image: '/images/team/tanya.jpg',
+    image: '/images/team/tanya.jpeg',
   },
 ];
 

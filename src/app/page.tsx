@@ -64,6 +64,30 @@ export default function Home() {
           ))}
         </div>
       </Section>
+      {/* Physiotherapy Video */}
+<Section
+  title="Discover Physiotherapy at Revive Holistic"
+  subtitle="A glimpse into our physiotherapy and rehabilitation approach"
+  backgroundColor="white"
+  centered
+>
+  <div className="max-w-4xl mx-auto">
+    <video
+      controls
+      playsInline
+      preload="metadata"
+      className="w-full rounded-lg shadow-lg"
+    >
+      <source src="/videos/physiotherapy.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+
+    <p className="text-gray-600 text-sm mt-4">
+      Learn more about physiotherapy and rehabilitation at Revive Holistic
+      Wellness Centre.
+    </p>
+  </div>
+  </Section>
 
       {/* About Section */}
       <Section

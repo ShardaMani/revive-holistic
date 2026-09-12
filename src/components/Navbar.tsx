@@ -25,10 +25,11 @@ export default function Navbar() {
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <Link href="/" className="flex-shrink-0">
-            <div className="text-2xl font-bold text-primary-600">
-              REVIVE
-            </div>
-            <div className="text-xs text-gray-600">Holistic Wellness</div>
+            <img
+              src="/images/logo1.jpeg"
+              alt="Revive Holistic Wellness Centre"
+              className="h-16 w-auto"
+            />
           </Link>
 
           {/* Desktop Navigation */}

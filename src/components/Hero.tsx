@@ -90,7 +90,7 @@ export default function Hero({
                 size="lg"
                 className="text-center"
               >
-                Call {businessInfo.phone.split(' ')[0]}
+                Call Us
               </Button>
             )}
           </div>
