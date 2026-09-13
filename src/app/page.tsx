@@ -7,8 +7,9 @@ import Button from '@/components/Button';
 import ContactForm from '@/components/ContactForm';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import PartnersSlider from '@/components/PartnersSlider';
 import { LocalBusinessSchema, OrganizationSchema } from '@/components/StructuredData';
-import { businessInfo, services, specializations, team, conditions, whyChooseUs } from '@/config/constants';
+import { businessInfo, services, specializations, team, conditions, whyChooseUs, partners, } from '@/config/constants';
 import { FiCheckCircle, FiPhone, FiMapPin } from 'react-icons/fi';
 import { SiWhatsapp } from 'react-icons/si';
 import Link from 'next/link';
@@ -31,7 +32,7 @@ export default function Home() {
 
       {/* Hero Section */}
       <Hero
-        title="Your path to better physical wellness starts here"
+        title="Integrative Care for Better Health, Mobility & Well-Being"
         description="Personalized holistic care solutions for improved mobility and wellness. Located in Najafgarh, South-West Delhi."
         image="/images/front_image.jpg"
         primaryCTA={{
@@ -112,7 +113,7 @@ export default function Home() {
               Revive Holistic Wellness Centre, located in Najafgarh, South-West Delhi, is a holistic healthcare and wellness centre dedicated to helping individuals achieve better health, mobility, comfort, and overall well-being through an integrated approach to care.
             </p>
             <p className="text-gray-600 mb-6">
-              Under the direction of Dr Tanya Mehra, Dr Kapil Davirkar, and Abhimanyu Vats, Revive Holistic Wellness Centre brings together complementary and evidence-informed therapeutic approaches with the aim of addressing the individual needs of every patient.
+              Under the direction of Dr Tanya Mehra, BPT (IPH) | MPT (Sports) | DCPTOT | MD (ACU), Dr Kapil Davirkar BPT | MPT | Chiropractor | Alternative Medicine Therapist & Abhimanyu Vats, MD (AM), MD (CH.T), an Alternative Medicine Practitioner, Revive Holistic Wellness Centre brings together complementary and evidence-informed therapeutic approaches with the aim of addressing the individual needs of every patient.
             </p>
             <p className="text-gray-600 mb-6">
               Our approach focuses not only on managing symptoms but also on understanding contributing factors such as posture, movement patterns, lifestyle, physical stress, and overall wellness. Treatment plans are designed according to the patient's condition, requirements, and therapeutic goals.
@@ -247,25 +248,63 @@ export default function Home() {
       </Section>
 
       {/* Our Clinical Team */}
-      <Section
-        id="team"
-        title="Our Clinical & Wellness Team"
-        backgroundColor="white"
-        centered
-      >
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {team.map((member) => (
-            <TeamCard
-              key={member.id}
-              name={member.name}
-              title={member.title}
-              qualifications={member.qualifications}
-              description={member.description}
-              image={member.image}
-            />
-          ))}
-        </div>
-      </Section>
+{/* Our Clinical Team */}
+<Section
+  id="team"
+  title="Our Clinical & Wellness Team"
+  backgroundColor="white"
+  centered
+>
+  <div className="max-w-5xl mx-auto">
+
+    {/* Director */}
+    <div className="mb-14">
+      <h3 className="text-2xl font-bold text-dark-900 mb-6 text-center">
+        Director
+      </h3>
+
+      <TeamCard
+        name={team[0].name}
+        title={team[0].title}
+        qualifications={team[0].qualifications}
+        description={team[0].description}
+        image={team[0].image}
+      />
+    </div>
+
+    {/* Consultant Team */}
+    <div>
+      <h3 className="text-2xl font-bold text-dark-900 mb-6 text-center">
+        Consultant Team
+      </h3>
+
+      <div className="space-y-10">
+        {team.slice(1).map((member) => (
+          <TeamCard
+            key={member.id}
+            name={member.name}
+            title={member.title}
+            qualifications={member.qualifications}
+            description={member.description}
+            image={member.image}
+          />
+        ))}
+      </div>
+    </div>
+
+  </div>
+</Section>
+
+        {/* Our Partners */}
+        <Section
+          id="partners"
+          title="Our Partners"
+          subtitle="Working together with trusted healthcare and wellness organizations"
+          backgroundColor="gray"
+          centered
+        >
+          <PartnersSlider partners={partners} />
+        </Section>
 
       {/* Appointments & Pricing */}
       <Section

@@ -38,8 +38,7 @@ export default function Hero({
       </div>
 
       {/* Content */}
-      <div className={`relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ${fullHeight ? 'h-full flex flex-col justify-center' : 'py-20'}`}>
-        <div className="max-w-3xl">
+          <div className={`relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ${fullHeight ? 'h-full flex flex-col justify-center translate-y-8' : 'py-20'}`}>        <div className="max-w-3xl">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
             {title.split(' ').map((word, idx) => {
               const highlightWords = ['Revive', 'Restore', 'Reclaim'];
@@ -55,8 +54,7 @@ export default function Hero({
           </h1>
 
           {description && (
-            <p className="text-lg md:text-xl text-gray-100 mb-8 max-w-2xl">
-              {description}
+          <p className="text-xl md:text-2xl text-gray-100 mb-8 max-w-3xl leading-relaxed">              {description}
             </p>
           )}
 

@@ -28,7 +28,7 @@ export default function Navbar() {
             <img
               src="/images/logo1.jpeg"
               alt="Revive Holistic Wellness Centre"
-              className="h-16 w-auto"
+              className="h-20 w-auto"
             />
           </Link>
 
