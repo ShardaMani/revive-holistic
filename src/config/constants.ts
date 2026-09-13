@@ -221,12 +221,14 @@ export const whyChooseUs = [
 
 export const partners = [
   {
+    id: 'dawaiwallah',
     name: 'Dawai Wallah',
     logo: '/images/partners/dawaiwallah.jpeg',
     website: 'https://www.dawaiwallah.com/',
   },
   {
-    name: 'JK Med',
+    id: 'jkmed',
+    name: 'JKMed Supplies',
     logo: '/images/partners/jkmed.jpeg',
     website: 'https://jkmed.in/',
   },
