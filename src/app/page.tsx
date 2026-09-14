@@ -248,7 +248,7 @@ export default function Home() {
       </Section>
 
       {/* Our Clinical Team */}
-{/* Our Clinical Team */}
+{/* Our Clinical & Wellness Team */}
 <Section
   id="team"
   title="Our Clinical & Wellness Team"
@@ -257,21 +257,6 @@ export default function Home() {
 >
   <div className="max-w-5xl mx-auto">
 
-    {/* Director */}
-    <div className="mb-14">
-      <h3 className="text-2xl font-bold text-dark-900 mb-6 text-center">
-        Director
-      </h3>
-
-      <TeamCard
-        name={team[0].name}
-        title={team[0].title}
-        qualifications={team[0].qualifications}
-        description={team[0].description}
-        image={team[0].image}
-      />
-    </div>
-
     {/* Consultant Team */}
     <div>
       <h3 className="text-2xl font-bold text-dark-900 mb-6 text-center">
@@ -279,7 +264,7 @@ export default function Home() {
       </h3>
 
       <div className="space-y-10">
-        {team.slice(1).map((member) => (
+        {team.map((member) => (
           <TeamCard
             key={member.id}
             name={member.name}
